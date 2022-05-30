@@ -24,18 +24,18 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Channel", url="https://t.me/heckerman"),
-                InlineKeyboardButton("Developer", url="https://t.me/fakehecker"),
+                InlineKeyboardButton("Channel", CommingSoon"),
+                InlineKeyboardButton("Developer", url="https://t.me/DeadInMyself"),
             ],
             [
                 InlineKeyboardButton(
-                    "Source code", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "Source code", url="https://youtu.be/o-YBDTqX_ZU"
                 )
             ],
         ]
     )
     await m.reply_text(
-        f"Hi! {messy} \nBot Made By @fakehecker\n Use /cmds to know my commands",
+        f"Hi! {messy} \nBot Made By @DeadInMyself\n Use /cmds to know my commands",
         reply_markup=keyboard,
     )
 
@@ -57,7 +57,7 @@ async def chk(_, m: Message):
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
     if len(m.command) < 2:
-        msg = await m.reply_text("First Know What is bin, motherfucker!`")
+        msg = await m.reply_text("First Tell Bin")
         await sleep(15)
         await msg.delete()
 
