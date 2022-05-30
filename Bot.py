@@ -24,7 +24,6 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Channel", CommingSoon"),
                 InlineKeyboardButton("Developer", url="https://t.me/DeadInMyself"),
             ],
             [
