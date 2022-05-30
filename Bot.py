@@ -66,7 +66,7 @@ async def bin(_, m: Message):
         inputm = m.text.split(None, 1)[1]
         bincode = 6
         ask = inputm[:bincode]
-        req = requests.get(f"https://bin-check-dr4g.herokuapp.com/api/{ask}").json()
+        req = requests.get(f"https://binssuapi.vercel.app/api/{ask}").json()
         res = req["result"]
 
         if res == False:
